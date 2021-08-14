@@ -25,8 +25,16 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-  <div class="loader"></div>
+
+<body style="background-color: #111111;" onload="loaded()">
+    <div class="introduc fullscreen text-center" id="introduc" style="display: absolute;">
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">ASHLEY</text>
+      </svg>
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line paige" style="margin-top: -40%;">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">PAIGE</text>
+      </svg>
+  </div>
     <!-- Body Inner -->
     <div class="body-inner">
           <!-- Header -->
@@ -257,71 +265,10 @@
         </section>
         <!-- end: Content -->
         <!-- Footer -->
-        <footer id="footer">
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="widget">
-                                <div class="widget-title">Polo HTML5 Template</div>
-                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br> All rights reserved. Copyright © 2021. INSPIRO.</p>
-                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted" target="_blank">Purchase Now</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Discover</div>
-                                        <ul class="list">
-                                            <li><a href="#">Features</a></li>
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Updates</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Customers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Features</div>
-                                        <ul class="list">
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Headers</a></li>
-                                            <li><a href="#">Widgets</a></li>
-                                            <li><a href="#">Footers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Pages</div>
-                                        <ul class="list">
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Shop</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Support</div>
-                                        <ul class="list">
-                                            <li><a href="#">Help Desk</a></li>
-                                            <li><a href="#">Documentation</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-content">
-                <div class="container">
-                    <div class="copyright-text text-center">&copy; 2021 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="https://www.inspiro-media.com" target="_blank" rel="noopener"> INSPIRO</a> </div>
+        <footer id="footer" style="background-color: #111111;">
+            <div class="copyright-content" style="background-color: #111111;">
+                <div class="container dark">
+                    <div class="copyright-text text-center" style="color:#fff;">&copy; 2021 Ashley Paige | All Rights Reserved. | Website designed by <a href="https://www.muditlal.com" target="_blank" rel="noopener" style="color:#ff6961;">MUDIT LAL</a> </div>
                 </div>
             </div>
         </footer>
@@ -335,6 +282,17 @@
     <script src="js/plugins.js"></script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
+    <script>
+      var myVar;
+
+      function loaded() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("introduc").style.display = "none";
+      }
+    </script>
 </body>
 
 </html>

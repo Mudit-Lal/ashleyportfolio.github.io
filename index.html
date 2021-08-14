@@ -26,19 +26,27 @@
 </head>
 
 
-<body style="background-color: #111111;">
+<body style="background-color: #111111;" onload="loaded()">
+    <div class="introduc fullscreen text-center" id="introduc" style="display: absolute;">
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">ASHLEY</text>
+      </svg>
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line paige" style="margin-top: -40%;">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">PAIGE</text>
+      </svg>
+  </div>
     <!-- Body Inner -->
     <div class="body-inner">
         <section class="parallax text-light fullscreen text-center" style="background: url(images/about/home.jpg) no-repeat center /cover;padding: 0;">
                 <div class="container-fullscreen">
                   <div class="row fullscreen" style="min-height:50vh;--bs-gutter-x: 0rem;">
-                   <div class="col-lg-6 special-menu sub-special-menu" style="padding: 0;">
+                   <div class="col-lg-6 special-menu sub-special-menu" style="padding: 0;" onclick="location.href = 'portfolio.html';">
                      <div class="fullscreen justify-content-center sub-special-menu" style="border-right: 2px solid white;">
                        <h2>PORTFOLIO</h2>
                      </div>
                    </div>
                    <div class="col-lg-6 special-menu sub-special-menu">
-                     <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;">
+                     <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;" onclick="location.href = 'aboutme.html';">
                        <h2 style="margin-top: 4px;">ABOUT ME</h2>
                      </div>
                    </div>
@@ -57,6 +65,18 @@
     if (screen.width <= 800) {
         window.location = "https://mudit-lal.github.io/ashleyportfolio.github.io/mobile.html";
       }
+      </script>
+
+      <script>
+        var myVar;
+
+        function loaded() {
+          myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+          document.getElementById("introduc").style.display = "none";
+        }
       </script>
 </body>
 

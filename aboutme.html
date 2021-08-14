@@ -13,6 +13,7 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
@@ -24,7 +25,15 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-color: #111111;">
+<body style="background-color: #111111;" onload="loaded()">
+    <div class="introduc fullscreen text-center" id="introduc" style="display: absolute;">
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">ASHLEY</text>
+      </svg>
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line paige" style="margin-top: -40%;">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">PAIGE</text>
+      </svg>
+  </div>
     <!-- Body Inner -->
     <div class="body-inner">
         <!-- Header -->
@@ -93,6 +102,17 @@
     <script src="js/plugins.js"></script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
+          <script>
+            var myVar;
+
+            function loaded() {
+              myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+              document.getElementById("introduc").style.display = "none";
+            }
+          </script>
 </body>
 
 </html>

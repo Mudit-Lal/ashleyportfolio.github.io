@@ -26,7 +26,15 @@
 </head>
 
 
-<body style="background-color: #111111;">
+<body style="background-color: #111111;" onload="loaded()">
+    <div class="introduc fullscreen text-center" id="introduc" style="display: absolute;">
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">ASHLEY</text>
+      </svg>
+      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line paige" style="margin-top: -40%;">
+        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">PAIGE</text>
+      </svg>
+  </div>
     <!-- Body Inner -->
     <div class="body-inner">
         <section class="parallax text-light fullscreen text-center" style="background: url(images/about/home.jpg) no-repeat center /cover;padding: 0;">
@@ -46,7 +54,7 @@
                    </div>
                  </div>-->
                  <div class="row fullscreen" style="--bs-gutter-x: 0rem;">
-                    <div class="col-12" style="height: 50vh; overflow: hidden; border-bottom: 2px solid white;">
+                    <div class="col-12" style="height: 50vh; overflow: hidden; border-bottom: 2px solid white;" onclick="location.href = 'portfolio.html';">
                       <div class="col special-menu sub-special-menu fullscreen" style="margin-top: -25vh; overflow: hidden;">
                         <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;">
                           <h2 style="margin-top: 4px;">PORTFOLIO</h2>
@@ -56,7 +64,7 @@
 
                   <!-- Force next columns to break to new line -->
                   <div class="w-100"></div>
-                  <div class="col-12" style="height: 50vh; overflow: hidden;">
+                  <div class="col-12" style="height: 50vh; overflow: hidden;" onclick="location.href = 'aboutme.html';">
                     <div class="col special-menu sub-special-menu fullscreen" style="margin-top: -25vh; overflow: hidden;">
                       <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;">
                         <h2 style="margin-top: 4px;">ABOUT ME</h2>
@@ -78,6 +86,18 @@
     if (screen.width >= 800) {
         window.location = "https://mudit-lal.github.io/ashleyportfolio.github.io/index.html";
       }
+      </script>
+
+      <script>
+        var myVar;
+
+        function loaded() {
+          myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+          document.getElementById("introduc").style.display = "none";
+        }
       </script>
 </body>
 
