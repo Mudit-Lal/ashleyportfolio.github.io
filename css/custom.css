@@ -6,6 +6,28 @@
  <link href="css/custom.css" rel="stylesheet">
 
 */
+
+@font-face {
+    font-family: 'glacial_indifferencebold';
+    src: url('glacialindifference-bold-webfont.woff2') format('woff2'),
+         url('glacialindifference-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'glacial_indifferenceregular';
+    src: url('glacialindifference-regular-webfont.woff2') format('woff2'),
+         url('glacialindifference-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .special-menu {
   background-color: rgba(0,0,0,0);
   transition: 0.3s;
@@ -20,5 +42,71 @@
 @media only screen and (max-width: 600px) {
   .sub-special-menu {
     max-height: 50% !important;
+  }
+  .paige{
+    margin-top:-660px !important;
+  }
+}
+
+#introduc {
+  position: absolute;
+  z-index: 299;
+  background-color: #111111;
+}
+#introduc p{
+  left: 50%;
+  top: 50%;
+  z-index: 299;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.text-line text {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards, filling 4s ease-in forwards;
+  left:50%;
+  top: 50%;
+  font-family: "glacial_indifferenceregular", sans-serif;
+  letter-spacing: 20px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  from{
+    fill: #f2f2f2;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #f2f2f2;
+    fill-opacity: 1;
   }
 }
