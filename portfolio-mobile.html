@@ -39,17 +39,38 @@
     <div class="body-inner">
         <section class="parallax text-light fullscreen text-center" style="background: url(images/about/home.jpg) no-repeat center /cover;padding: 0;">
                 <div class="container-fullscreen">
-                  <div class="row fullscreen" style="min-height:50vh;--bs-gutter-x: 0rem;">
-                   <div class="col-lg-6 special-menu sub-special-menu" style="padding: 0;cursor: pointer;" onclick="location.href = 'portfolio.html';">
+                  <!--<div class="row fullwidth">
+                   <div class="col special-menu sub-special-menu fullscreen" style="padding: 0;">
                      <div class="fullscreen justify-content-center sub-special-menu" style="border-right: 2px solid white;">
                        <h2>PORTFOLIO</h2>
                      </div>
                    </div>
-                   <div class="col-lg-6 special-menu sub-special-menu">
-                     <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;cursor: pointer;" onclick="location.href = 'aboutme.html';">
+                 </div>
+                   <div class="row fullwidth">
+                   <div class="col special-menu sub-special-menu fullscreen">
+                     <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;">
                        <h2 style="margin-top: 4px;">ABOUT ME</h2>
                      </div>
                    </div>
+                 </div>-->
+                 <div class="row fullscreen" style="--bs-gutter-x: 0rem;">
+                    <div class="col-12" style="height: 50vh; overflow: hidden; border-bottom: 2px solid white;cursor: pointer;" onclick="location.href = 'photography.html';">
+                      <div class="col special-menu sub-special-menu fullscreen" style="margin-top: -25vh; overflow: hidden;">
+                        <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;">
+                          <h2 style="margin-top: 4px;">PHOTOGRAPHY</h2>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- Force next columns to break to new line -->
+                  <div class="w-100"></div>
+                  <div class="col-12" style="height: 50vh; overflow: hidden;cursor: pointer;" onclick="location.href = 'videography.html';">
+                    <div class="col special-menu sub-special-menu fullscreen" style="margin-top: -25vh; overflow: hidden;">
+                      <div class="fullscreen justify-content-center sub-special-menu" style="border-top: 2px solid white;margin-top: -4px;">
+                        <h2 style="margin-top: 4px;">VIDEOGRAPHY</h2>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </section>
@@ -62,8 +83,8 @@
     <!--Template functions-->
     <script src="js/functions.js"></script>
     <script>
-    if (screen.width <= 800) {
-        window.location = "https://mudit-lal.github.io/ashleyportfolio.github.io/mobile.html";
+    if (screen.width >= 800) {
+        window.location = "https://mudit-lal.github.io/ashleyportfolio.github.io/portfolio.html";
       }
       </script>
 
