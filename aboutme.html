@@ -131,6 +131,17 @@
     <script src="js/plugins.js"></script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
+    <script>
+      var myVar;
+
+      function loaded() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("introduc").style.display = "none";
+      }
+    </script>
 </body>
 
 </html>
