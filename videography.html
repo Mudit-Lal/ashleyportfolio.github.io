@@ -249,9 +249,12 @@
     <script src="js/functions.js"></script>
     <script>
       var myVar;
-
+      var flagload;
+      flagload = 0;
       function loaded() {
+        if (flagload==0) {
         myVar = setTimeout(showPage, 3000);
+      }
       }
 
       function showPage() {

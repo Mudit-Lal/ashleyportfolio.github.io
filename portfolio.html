@@ -66,12 +66,14 @@
         window.location = "https://mudit-lal.github.io/ashleyportfolio.github.io/portfolio-mobile.html";
       }
       </script>
-
       <script>
         var myVar;
-
+        var flagload;
+        flagload = 0;
         function loaded() {
+          if (flagload==0) {
           myVar = setTimeout(showPage, 3000);
+        }
         }
 
         function showPage() {
