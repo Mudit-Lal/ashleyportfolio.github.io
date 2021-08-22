@@ -40,20 +40,36 @@
 }
 
   .loading-text {
-    padding-left:40% !important;
+    padding-left:30vw !important;
   }
   .paige{
     padding-left:42% !important;
   }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 800px) {
   .sub-special-menu {
     max-height: 50% !important;
     padding-left:0vh !important;
   }
   .paige{
     margin-top:-80vh !important;
+    padding-left:0vh !important;
   }
+  .desktop-load {
+    display: none !important;
+  }
+
+  .phone-load {
+    display: block !important;
+  }
+}
+
+.phone-load {
+  display: none;
+}
+
+.desktop-load {
+  display: block;
 }
 
 #introduc {
