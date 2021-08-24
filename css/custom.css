@@ -118,6 +118,7 @@
   letter-spacing: 20px;
 }
 
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
