@@ -118,6 +118,10 @@
   letter-spacing: 20px;
 }
 
+.glacial {
+  font-family: "glacial_indifferenceregular", sans-serif !important;
+}
+
 
 @keyframes dash {
   to {
