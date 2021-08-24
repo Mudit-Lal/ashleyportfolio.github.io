@@ -25,18 +25,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-color: #111111;" onload="loaded()">
-    <div class="introduc fullscreen text-center" id="introduc">
-      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line phone-load">
-        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">ASHLEY</text>
-      </svg>
-      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line paige phone-load" style="margin-top: -40%;">
-        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">PAIGE</text>
-      </svg>
-      <svg width="100%" stroke="#FFFFFF" stroke-width="2" class="text-line loading-text desktop-load">
-        <text x="50" y="90" fill="none" style="font-size: 4em;word-wrap: break-word;">ASHLEY PAIGE</text>
-      </svg>
-  </div>
+<body style="background-color: #111111;">
     <!-- Body Inner -->
     <div class="body-inner" id="content">
         <!-- Header -->
@@ -451,20 +440,6 @@
     <script src="js/plugins.js"></script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
-          <script>
-            var myVar;
-            var flagload;
-            flagload = 0;
-            function loaded() {
-              if (flagload==0) {
-              myVar = setTimeout(showPage, 3000);
-            }
-            }
-
-            function showPage() {
-              document.getElementById("introduc").style.display = "none";
-            }
-          </script>
 </body>
 
 </html>
