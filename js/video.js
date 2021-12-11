@@ -9,8 +9,6 @@ var tag = document.createElement('script');
       function onYouTubePlayerAPIReady() {
         player = new YT.Player('player', {
           playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
-          videoId: 'RhEm5Loqc0w',
-          events: {
-            'onReady': onPlayerReady}
+          videoId: 'RhEm5Loqc0w'
         });
       }
