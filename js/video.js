@@ -11,11 +11,11 @@ var tag = document.createElement('script');
           playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
           videoId: 'RhEm5Loqc0w',
           events: {
-            'onReady': onPlayerReady}
-        });
-      }
+                  'onReady': onPlayerReady}
+              });
+            }
 
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.unMute();
-      }
+          // 4. The API will call this function when the video player is ready.
+          function onPlayerReady(event) {
+            event.target.mute();
+          }
