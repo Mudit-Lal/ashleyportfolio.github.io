@@ -14,9 +14,3 @@ var tag = document.createElement('script');
             'onReady': onPlayerReady}
         });
       }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.mute();
-        player.unMute();
-      }
